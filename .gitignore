@@ -1,0 +1,9 @@
+# environment file (contains API keys)
+.env
+
+# local data storage
+data.json
+
+# Python cache files
+__pycache__/
+*.pyc
