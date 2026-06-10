@@ -1,9 +1,7 @@
 import json
-from dotenv import load_dotenv
 import os
 import anthropic
-
-load_dotenv()
+import streamlit as st
 # --------------------------------------------------
 # CONFIGURATION
 # --------------------------------------------------
@@ -44,7 +42,7 @@ DATA_FILE = "data.json"
 # --------------------------------------------------
 
 client = anthropic.Anthropic(
-    api_key=os.getenv("ANTHROPIC_API_KEY")
+    api_key=st.secrets["ANTHROPIC_API_KEY"]
 )
 
 # --------------------------------------------------
